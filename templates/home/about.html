@@ -1,7 +1,168 @@
 {% extends 'base.html' %}
 
-{% block title %} About{% endblock title %}
+{% block title %}About - iCoder{% endblock title %}
+
+{% block aboutactive %}active{% endblock aboutactive %}
 
 {% block body %}
+<div class="container my-4">
+    <div class="row">
+        <div class="col-md-8">
+            <h1 class="display-4 mb-4">About iCoder</h1>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title h3">Our Mission</h2>
+                    <p class="card-text">
+                        Welcome to iCoder, your ultimate destination for programming knowledge, tutorials, and coding insights. 
+                        We are passionate about making coding accessible to everyone, from beginners taking their first steps 
+                        into programming to experienced developers looking to expand their skillset.
+                    </p>
+                </div>
+            </div>
 
- {% endblock %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title h3">What We Offer</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-code text-primary"></i>
+                                    <strong>Programming Tutorials</strong><br>
+                                    <small class="text-muted">Step-by-step guides for various programming languages</small>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-laptop-code text-primary"></i>
+                                    <strong>Web Development</strong><br>
+                                    <small class="text-muted">Frontend and backend development tips</small>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-mobile-alt text-primary"></i>
+                                    <strong>Mobile Development</strong><br>
+                                    <small class="text-muted">iOS and Android app development guides</small>
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-database text-primary"></i>
+                                    <strong>Database Management</strong><br>
+                                    <small class="text-muted">SQL, NoSQL, and database design principles</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title h3">Our Story</h2>
+                    <p class="card-text">
+                        Founded by a team of passionate developers, iCoder started as a small blog sharing coding tips 
+                        and tricks. Over time, we've grown into a comprehensive resource for programmers worldwide. 
+                        Our contributors include industry professionals, educators, and enthusiastic developers who 
+                        believe in the power of sharing knowledge.
+                    </p>
+                    <p class="card-text">
+                        We understand that learning to code can be challenging, which is why we focus on creating 
+                        content that is not only informative but also easy to understand and implement. Every tutorial, 
+                        article, and guide is crafted with the learner in mind.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title h5 mb-0">Quick Stats</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row text-center">
+                        <div class="col-6 border-right">
+                            <h4 class="text-primary">500+</h4>
+                            <small class="text-muted">Articles</small>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="text-primary">10K+</h4>
+                            <small class="text-muted">Readers</small>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row text-center">
+                        <div class="col-6 border-right">
+                            <h4 class="text-primary">50+</h4>
+                            <small class="text-muted">Languages</small>
+                        </div>
+                        <div class="col-6">
+                            <h4 class="text-primary">3+</h4>
+                            <small class="text-muted">Years</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-header bg-success text-white">
+                    <h3 class="card-title h5 mb-0">Join Our Community</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        Become part of our growing community of developers. Share your knowledge, 
+                        ask questions, and learn from others.
+                    </p>
+                    <a href="/blog" class="btn btn-success btn-block">
+                        <i class="fas fa-blog"></i> Visit Our Blog
+                    </a>
+                    <a href="/contact" class="btn btn-outline-primary btn-block mt-2">
+                        <i class="fas fa-envelope"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header bg-info text-white">
+                    <h3 class="card-title h5 mb-0">Popular Topics</h3>
+                </div>
+                <div class="card-body">
+                    <div class="d-flex flex-wrap">
+                        <span class="badge badge-primary mr-1 mb-1">Python</span>
+                        <span class="badge badge-primary mr-1 mb-1">JavaScript</span>
+                        <span class="badge badge-primary mr-1 mb-1">Django</span>
+                        <span class="badge badge-primary mr-1 mb-1">React</span>
+                        <span class="badge badge-primary mr-1 mb-1">HTML/CSS</span>
+                        <span class="badge badge-primary mr-1 mb-1">SQL</span>
+                        <span class="badge badge-primary mr-1 mb-1">Git</span>
+                        <span class="badge badge-primary mr-1 mb-1">APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to Action Section -->
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="jumbotron bg-light">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h2 class="display-5">Ready to Start Coding?</h2>
+                        <p class="lead">
+                            Explore our extensive collection of tutorials, tips, and resources. 
+                            Whether you're a beginner or an expert, there's something for everyone.
+                        </p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="/blog" class="btn btn-primary btn-lg">
+                            <i class="fas fa-rocket"></i> Explore Blog
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
